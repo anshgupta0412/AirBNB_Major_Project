@@ -81,10 +81,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.get("/", (req, res) => {
-//   res.send("hii, this is root page");
-// });
-
 app.get("/getcookies", (req, res) => {
     res.cookie("greet", "hello");
     res.send("send you some cookies");
